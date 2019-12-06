@@ -1,3 +1,100 @@
-html{
+/* General section*/
+html body{
   font-family: 'Public Sans',sans-serif ;
+  margin: 0;
+  background: #F6F6F6;
 }
+.container {
+
+  display: grid;
+  background: #F6F6F6;
+  grid-template: 50px 1fr / 150px 1fr;
+  height: 762px;
+  grid-gap: 5px;
+  grid-template-areas: 
+  "nav_bar nav_bar"
+  "menu content";
+}
+/* Navbar Section */
+.nav_bar {
+  padding: 0px 40px;
+  grid-area: nav_bar;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  background: #F6F6F6;
+  box-shadow: 0px 10px 5px -3px rgba(168, 168, 168, 0.2);
+}
+/* config de logo */
+.logo {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.icono {
+  width: 50px;
+}
+.logo p{
+  justify-items: center;
+  margin: 0;
+  padding: 10px;
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+}
+/* config search_bar */
+.search_bar {
+  width: 100%;
+  display: grid;
+  align-content: center;
+}
+.search_bar input {
+  font-weight: normal;
+  width: 100%;
+  height: 25px;
+  border: 1px solid rgba(179, 179, 179, 0.493);
+  border-radius: 5px;
+  padding: 10px;
+}
+/* config profile */
+.profile {
+  grid-template-columns: 1fr 50px 30px;
+  display: grid;
+  justify-items: right;
+  align-items: center;
+}
+.profile .avatar {
+  height: 35px;
+  width: 35px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  border-radius: 50%;
+  border: 1px solid red;
+  background-size: 100% 100%;
+}
+.profile p{
+  margin: 0;
+  padding: 15px;
+  font-size: 16 px;
+  color: black;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.menu {
+  grid-area: menu;
+}
+
+.content {
+  grid-area: content;
+}
+
