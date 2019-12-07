@@ -8,14 +8,14 @@ html body{
 
   display: grid;
   background: #F6F6F6;
-  grid-template: 50px 1fr / 150px 1fr;
+  grid-template: 50px 1fr / 80px 1fr;
   height: 762px;
   grid-gap: 5px;
   grid-template-areas: 
   "nav_bar nav_bar"
   "menu content";
 }
-/* Navbar Section */
+/* HEADER SECTION */
 .nav_bar {
   padding: 0px 40px;
   grid-area: nav_bar;
@@ -68,7 +68,6 @@ html body{
   background-repeat: no-repeat;
   background-position: 100%;
   border-radius: 50%;
-  border: 1px solid red;
   background-size: 100% 100%;
 }
 .profile p{
@@ -78,20 +77,40 @@ html body{
   color: black;
   font-weight: normal;
 }
+/* END HEADER SECTION */
 
-
-
-
-
-
-
-
-
-
-
+/* NAV_BAR SECTION */
 
 .menu {
   grid-area: menu;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 100px);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  justify-content: space-between;
+  /* padding: 10px; */
+  background: rgb(129, 15, 15);
+}
+
+.menu img{
+  width: 25px;
+}
+
+.menu .home,
+.menu .trending,
+.menu .likes,
+.menu .settings {
+  margin: 25px 0px;
+}
+.menu p{
+  margin: ;
+}
+
+.settings {
+  align-self: end;
 }
 
 .content {
